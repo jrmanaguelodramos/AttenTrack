@@ -1,0 +1,253 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #243e63;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .class_info {
+        margin-top: 20px;
+        text-align: left;
+        color: white;
+    }
+
+    .course-section {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .course-details {
+        font-size: 16px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+
+
+    .menu button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .pending {
+        background: #ddd;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .logout {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .dashboard {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .add {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .main {
+        flex: 1;
+        padding: 40px;
+        background-color: #fff;
+        height: 100vh;
+    }
+
+    .settings_container {
+        background-color: white;
+        padding: 40px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+    .form {
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    input[type="time"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        border: 1px solid #333;
+    }
+
+    input[type="time"]:focus,
+    select:focus {
+        border-color: #243e63;
+    }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button.cancel,
+    button.save {
+        padding: 10px 60px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button.cancel {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+
+    button.cancel:hover {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    button.save {
+        background-color: #243e63;
+        color: white;
+    }
+
+    button.save:hover {
+        background-color: #1C375B;
+        color: white;
+    }
+
+    /* Modal Background */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+    }
+
+    /* Modal Box */
+    .modal-box {
+        background: #d9d9d9;
+        width: 400px;
+        padding: 25px;
+        border-radius: 10px;
+        margin: 8% auto;
+        font-family: Arial;
+    }
+
+    /* Title */
+    .modal-box h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Labels */
+    .modal-box label {
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Inputs */
+    .modal-box select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #888;
+        margin-bottom: 10px;
+    }
+
+    /* Room + Button */
+    .room-row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .connect-btn {
+        padding: 10px;
+        border: none;
+        background: #aaa;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* Status */
+    .status {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .status span {
+        color: green;
+        font-weight: bold;
+    }
+
+    /* Buttons */
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .cancel {
+        background: #ccc;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+
+    .continue {
+        background: green;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+    /* Hover */
+    button:hover {
+        opacity: 0.9;
+    }

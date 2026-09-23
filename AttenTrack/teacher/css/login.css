@@ -1,0 +1,112 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .left_panel {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left_panel img {
+        width: 80%;
+    }
+
+    .right_panel {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        background: #eee;
+        padding: 80px;
+        border-radius: 15px;
+        width: 550px;
+        text-align: left;
+    }
+
+    .login-box h3 {
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+
+    .login-box h1 {
+        color: #6257DB;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #aaa;
+        border-radius: 50%;
+        margin: 20px auto;
+    }
+
+    .input-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        background: #ddd;
+    }
+
+    .icon {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 8px;
+    padding: 0 10px;
+    }
+
+    .icon i {
+        margin-right: 10px;
+        color: #555;
+    }
+
+    .icon input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #6257DB;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .note {
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: center;
+    }
+

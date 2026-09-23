@@ -1,0 +1,266 @@
+    h1 {
+        font-size: 28px !important;
+        color: #0b3b78;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif !important;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    section {
+        margin: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #ffffff;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    th {
+        padding: 22px 18px;
+        text-align: center !important;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0b3b78;
+        text-transform: uppercase;
+        border: none !important;
+        background: #f8fafc !important;
+        border-bottom: 1px solid #e5e7eb !important;
+        letter-spacing: 0.5px;
+    }
+
+    tbody tr {
+        transition: 0.3s ease;
+    }
+
+    tbody tr:hover {
+        background: #f4f7ff;
+    }
+
+    td {
+        padding: 22px 18px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        color: #1f2937;
+        border-bottom: 1px solid #edf1f7;
+        background: #ffffff;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .table-primary,
+    .table-primary > th,
+    .table-primary > td {
+        background: #eff6ff !important;
+    }
+
+    .table-secondary,
+    .table-secondary > th,
+    .table-secondary > td {
+        background: #f3f4f6 !important;
+    }
+
+    .error {
+        color: #dc2626;
+        text-align: center;
+        font-weight: 600;
+        padding: 30px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 20px;
+    }
+
+    .form-style-5 {
+        display: block;
+        margin: 0 auto;
+        max-width: 250px;
+        padding: 5px;
+    }
+
+    .modal-content input[type="submit"],
+    .form-style-5 button {
+        font-family: "Poppins", sans-serif;
+        display: block;
+        padding: 12px;
+        color: #fff;
+        margin: 0 auto 10px;
+        background: #0b3b78;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    .modal-content input[type="submit"]:hover,
+    .form-style-5 button:hover {
+        background: #124a94;
+        transform: translateY(-1px);
+    }
+
+    .panel {
+        border: none !important;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .panel-heading {
+        background: #0b3b78 !important;
+        color: white;
+    }
+
+    .panel-body {
+        background: #f8fafc !important;
+    }
+
+    .slideInRight {
+        animation-name: slideInRight;
+    }
+
+    .slideInDown {
+        animation-name: slideInDown;
+    }
+
+    .animated {
+        animation-duration: 0.6s;
+        animation-fill-mode: both;
+    }
+
+    .time {
+        display: block;
+        position: absolute;
+        right: 10%;
+        margin-top: -25px;
+    }
+
+    .time input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+    }
+
+    .time label {
+        background: #e2e8f0;
+        color: #0f172a;
+        font-size: 14px;
+        text-align: center;
+        padding: 8px 14px;
+        border-radius: 8px;
+        margin-right: 6px;
+        transition: 0.2s ease;
+        border: none;
+    }
+
+    .time label:hover {
+        cursor: pointer;
+        background: #cbd5e1;
+    }
+
+    .time input:checked + label {
+        background: #0b3b78;
+        color: #fff;
+    }
+
+    .stats-container {
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0;
+    }
+
+    .single-card {
+        width: 300px;
+        padding: 18px 22px;
+        border-radius: 18px;
+        background: #243e63;
+        color: white;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        text-align: left;
+    }
+
+    .single-card p {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+
+    .single-card strong {
+        display: inline-block;
+        width: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        section {
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 20px !important;
+        }
+
+        th {
+            font-size: 12px;
+            padding: 12px 8px;
+        }
+
+        td {
+            font-size: 13px;
+            padding: 14px 8px;
+        }
+
+        .single-card {
+            width: 100%;
+        }
+
+        .form-style-5 button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }

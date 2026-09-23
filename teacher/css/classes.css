@@ -1,0 +1,117 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+    }
+
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #243e63;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+
+        position: fixed;
+    }
+
+    .profile {
+        text-align: center;
+        font-size: 130px;
+    }
+
+    .menu button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .menu button:hover {
+        background: #bbb;
+    }
+
+    .pending {
+        background: #ddd;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .logout {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .info {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        background: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .main {
+        flex: 1;
+        margin-left: 250px;
+        padding: 30px;
+        background: #f4f4f4;
+        /* min-height: 100vh; */
+    }
+
+    .main h1 {
+        margin-bottom: 15px;
+    }
+
+    .filter {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #ddd;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        background: #eaeaea;
+        padding: 20px;
+        border-radius: 15px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }

@@ -1,0 +1,212 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #243e63;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .class_info {
+        margin-top: 20px;
+        text-align: left;
+        color: white;
+    }
+
+    .course-section {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .course-details {
+        font-size: 16px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+
+
+    .menu button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .pending {
+        background: #ddd;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .logout {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .dashboard {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .add {
+        background: #ddd;
+        font-size: 16px;
+    }
+
+    .main {
+        flex: 1;
+        padding: 40px;
+        background-color: #fff;
+        height: 100vh;
+    }
+
+    .settings_container {
+        background-color: white;
+        padding: 40px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+    .form {
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        border: 1px solid #333;
+    }
+
+    input[type="number"]:focus,
+    select:focus {
+        border-color: #243e63;
+    }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a.cancel,
+    button.save {
+        padding: 10px 60px;
+        min-width: 120px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    a.cancel {
+        background-color: #ff0000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a.cancel:hover {
+        background-color: #ff3d3d;
+        color: white;
+    }
+
+    button.save {
+        background-color: #243e63;
+        color: white;
+    }
+
+    button.save:hover {
+        background-color: #1C375B;
+        color: white;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background: white;
+        padding: 40px;
+        margin: 15% auto;
+        width: 450px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .modal-content button {
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .confirm {
+        background-color: #003366;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .confirm:hover {
+        background-color: #1C375B;
+    }
+
+    .cancel2 {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cancel2:hover {
+        background-color: #c82333;
+    }

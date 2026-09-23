@@ -1,0 +1,101 @@
+body{
+    background: -webkit-linear-gradient(left, #0e251f, #21a0ab);
+    background: linear-gradient(to left, #23555c, #1C375B);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left panel (image side) */
+.left_panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left_panel img {
+  width: 70%;
+}
+
+/* Right panel (login form) */
+.right_panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;  
+}
+
+/* Login box */
+.login-box {
+  width: 300px;
+  text-align: center;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.login-box h1 {
+  margin: 10px 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.icon i {
+  margin-right: 10px;
+}
+
+.icon input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #008080;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #067979;
+}
